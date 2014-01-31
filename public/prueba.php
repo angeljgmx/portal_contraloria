@@ -17,14 +17,16 @@ $path = "../";
 // Inclusion de librerias
 include $path."includes/theme.php";
 
+$meta = "";
 $page_title = "P&aacute;gina de Prueba";
-HeaderHTML($path, $page_title);
+$css = "";
+HeaderHTML($path, $meta, $page_title,$css);
 
 BodyInicio();
 
 HeaderWrapper($path);
 
-PageTitle($path, $page_title);
+PageTitle2($path, $page_title);
 
 ContenidoInicio();
 

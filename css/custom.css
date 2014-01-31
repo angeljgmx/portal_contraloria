@@ -1,0 +1,44 @@
+    /********************************************************/
+    /* Portal Web de la Contraloria del Estado Tachira      */
+    /* Oficina de Sistemas e Informacion Digital            */
+    /* Angel Garcia                                         */
+    /* angel.j.garcia.m@gmail.com                           */
+    /* Enero de 2014                                        */
+    /********************************************************/
+
+
+/* ---------------------------------------------------------------------- */
+/*  Page title
+/* ---------------------------------------------------------------------- */
+.top_title {
+    color: #fff; 
+    background:#333333;
+    margin-bottom:30px;
+    position:relative;
+}
+
+
+.top_title h2 {text-shadow:#2c2c2c 0 1px 1px;color:#fff;font:bold 36px 'PT Sans';float:left;padding:0 36px 0 0;}
+.top_title h2 span {color: #888888; font-weight:normal;font-size:16px 'PT Sans';display:block;padding-top:4px;}
+
+
+.top_title a {
+    color: #cccccc;
+    font: 16px 'PT Sans';
+}
+
+.top_title span {
+    color: #888888;
+    font: 16px 'PT Sans';
+}
+
+#top_title_date {
+    font: 16px 'PT Sans';
+    padding-left: 28px;
+    background-position: 5px center;
+    background-image: url(../img/icons/16x16/calendar_1_icon&16.png); 
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    float: right;
+}
+
