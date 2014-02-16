@@ -80,7 +80,9 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
     
     function HeaderWrapper($path){
-    
+        
+        // Inclusion del menu
+        require_once $path.'includes/menu.php';
  
         echo "<!-- .header-wrapper start --> \n"
             ."<div id=\"header-wrapper\" class=\"clearfix\"> \n"
@@ -129,98 +131,9 @@
             ."<a href=\"index.html\"> \n"
             ."<img src=\"".$path."img/logo.png\" title=\"elvyre html5 template\" alt=\"elvyre professional corporate template\"/> \n"
             ."</a> \n"
-            ."</section> \n"
+            ."</section> \n";
 
-            // Navegacion
-            ."<section id=\"nav-container\"> \n"
-            ."<nav id=\"nav\"> \n"
-            ."<ul> \n"
-            ."<li> \n"
-            ."<a href=\"index.html\">Home</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"index.html\">Home default</a></li> \n"
-            ."<li><a href=\"home02.html\">Home business 02</a></li> \n"
-            ."<li><a href=\"home03.html\">Home business 03</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li> \n"
-            ."<a href=\"index.html\">Headers</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"index.html\">Header style 01</a></li> \n"
-            ."<li><a href=\"header02.html\">Header style 02</a></li> \n"
-            ."<li><a href=\"header03.html\">Header style 03</a></li> \n"
-            ."<li><a href=\"header04.html\">Header style 04</a></li> \n"
-            ."<li><a href=\"header05.html\">Header style 05</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li class=\"current-menu-item\"> \n"
-            ."<a href=\"about.html\">Pages</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"about.html\">About us</a></li> \n"
-            ."<li><a href=\"about02.html\">About us style 02</a></li> \n"
-            ."<li><a href=\"aboutme.html\">About me</a></li> \n"
-            ."<li><a href=\"pagetitle02.html\">About me page title 02</a></li> \n"
-            ."<li><a href=\"pagetitle03.html\">About me page title 03</a></li> \n"
-            ."<li class=\"current-menu-item\"><a href=\"team.html\">Team members</a></li> \n"
-            ."<li><a href=\"hiring.html\">We are hiring</a></li> \n"
-            ."<li><a href=\"services.html\">Our services</a></li> \n"
-            ."<li><a href=\"services02.html\">Services style 02</a></li> \n"
-            ."<li><a href=\"pricing.html\">Pricing tables</a></li> \n"
-            ."<li><a href=\"sidebarleft.html\">Page sidebar left</a></li> \n"
-            ."<li><a href=\"sidebarright.html\">Page sidebar right</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li> \n"
-            ."<a href=\"portfolio3.html\">Portfolio</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"portfolio2.html\">Portfolio 2 columns</a></li> \n"
-            ."<li><a href=\"portfolio3.html\">Portfolio 3 columns</a></li> \n"
-            ."<li><a href=\"portfolio4.html\">Portfolio 4 columns</a></li> \n"
-            ."<li><a href=\"portfoliofull.html\">Portfolio full layout</a></li> \n"
-            ."<li><a href=\"portfoliosingle.html\">Portfolio single</a></li> \n"
-            ."<li><a href=\"portfoliosingle02.html\">Portfolio single 02</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li> \n"
-            ."<a href=\"blog2.html\">Blog</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"blog.html\">Blog small image</a></li> \n"
-            ."<li><a href=\"blog2.html\">Blog big image</a></li> \n"
-            ."<li><a href=\"blog3.html\">Blog full no sidebar</a></li> \n"
-            ."<li><a href=\"blogmasonry.html\">Blog masonry</a></li> \n"
-            ."<li><a href=\"blogmasonry02.html\">Blog masonry no sidebar</a></li> \n"
-            ."<li><a href=\"blogsingle.html\">Blog single</a></li> \n"
-            ."<li><a href=\"blogsingle02.html\">Blog single full width</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li> \n"
-            ."<a href=\"team.html#\">Features</a> \n"
-            ."<ul> \n"
-            ."<li><a href=\"tabs.html\">Tabs</a></li> \n"
-            ."<li><a href=\"buttons.html\">Buttons</a></li> \n"
-            ."<li><a href=\"accordions.html\">Accordions</a></li> \n"
-            ."<li><a href=\"informationboxes.html\">Information boxes</a></li> \n"
-            ."<li><a href=\"testimonials.html\">Testimonials</a></li> \n"
-            ."<li><a href=\"lists.html\">Lists</a></li> \n"
-            ."<li><a href=\"notes.html\">Notes</a></li> \n"
-            ."<li><a href=\"columnsandsections.html\">Columns and sections</a></li> \n"
-            ."<li><a href=\"dropcaps.html\">Dropcaps & highlighters</a></li> \n"
-            ."<li><a href=\"socialicons.html\">Social icons</a></li> \n"
-            ."<li><a href=\"socialphotostreams.html\">Social photo streams</a></li> \n"
-            ."</ul> \n"
-            ."</li> \n"
-
-            ."<li class=\"no-sub\"> \n"
-            ."<a href=\"contact.html\">Contact</a> \n"
-            ."</li> \n"
-            ."</ul> \n"
-            ."</nav><!-- #nav end --> \n"                  
-            ."</section><!-- #nav-container end --> \n"
+        Menu($path);
 /*
             ."<!-- #dl-menu.dl-menuwrapper start --> \n"
             ."<div id=\"dl-menu\" class=\"dl-menuwrapper\"> \n"
@@ -310,8 +223,8 @@
             ."</ul><!-- .dl-menu end --> \n"
             ."</div><!-- #dl-menu.dl-menuwrapper end --> \n"
 */
-            // Buscador    
-            ."<!-- #search-box start --> \n"
+        // Buscador    
+        echo "<!-- #search-box start --> \n"
             ."<section id=\"search\"> \n"
             ."<form action=\"team.html#\" method=\"get\"> \n"
             ."<input class=\"search-submit\" type=\"submit\" /> \n"
